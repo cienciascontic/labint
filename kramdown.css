@@ -1,0 +1,43 @@
+body {
+  font-family: Lato, Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+    margin-bottom: 0px; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 1em 0;
+  line-height: 1.5em; }
+
+ul {
+  margin: 1em 0em; }
+  ul li {
+    margin: 0.5em 0em; }
+
+ol {
+  margin: 1em 0em; }
+  ol li {
+    margin: 0.5em 0em; }
+
+code {
+  font-size: 90%;
+  background-color: #f8f8ff;
+  color: #444444;
+  padding: 0 0.2em;
+  border: 1px solid #dedede; }
+  code .keyword {
+    font-weight: bold; }
+  code .string, code .regexp {
+    color: darkgreen; }
+  code .class, code .special {
+    color: darkblue; }
+  code .number {
+    color: darkred; }
+  code .comment {
+    color: grey; }
+
+a code {
+  color: darkblue; }

@@ -1,0 +1,64 @@
+{
+  "title": "Aceite y Agua",
+  "publicationStatus": "sample",
+  "subtitle": "Explorar cómo interactúan sustancias polares con no-polares.",
+  "about": [
+    "Es bien sabido que \"aceite y agua no se mezclan.\" ¿Pero por qué? Ejecutar el modelo de ",
+    "agua polar (azul y roja) y aceite no-polar (gris). \"Agitar la mezcla de aceite y ",
+    "agua,\" luego ejecutar nuevamente y observar qué sucede con las moléculas a lo largo del tiempo."
+  ],
+  "i18nMetadata": "locales/metadata/oil-and-water.json",
+  "models": [
+    {
+      "type": "md2d",
+      "id": "page3$1",
+      "url": "models/oil-and-water/oil-and-water.json",
+      "viewOptions": {
+        "controlButtons": "play_reset",
+        "textBoxes": [
+          {
+            "text": "Agua y aceite separados",
+            "x": 1.08,
+            "y": 2.0,
+            "fontScale": 1.3,
+            "layer": 1,
+            "frame": "rounded rectangle",
+            "backgroundColor": "rgb(245,245,245)"
+          }
+        ]
+      }
+    },
+    {
+      "type": "md2d",
+      "id": "oilAndWaterMix",
+      "url": "models/oil-and-water/oil-and-water-mix.json",
+      "viewOptions": {
+        "controlButtons": "play_reset",
+        "textBoxes": [
+          {
+            "text": "Agua y aceite agitados y mezclados",
+            "x": 0.804,
+            "y": 2.0,
+            "fontScale": 1.3,
+            "layer": 1,
+            "frame": "rounded rectangle",
+            "backgroundColor": "rgb(245,245,245)"
+          }
+        ]
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "button",
+      "id": "shake",
+      "text": "Agitar la mezcla de aceite y agua",
+      "action": "loadModel('oilAndWaterMix');"
+    }
+  ],
+  "layout": {
+    "bottom": [
+      "shake"
+    ]
+  }
+}
